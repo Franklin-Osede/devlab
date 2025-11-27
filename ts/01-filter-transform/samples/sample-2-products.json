@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "price": 1299,
+    "stock": 5,
+    "category": "electronics",
+    "createdAt": "2024-01-10",
+    "supplier": "TechCorp"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "price": 25,
+    "stock": 0,
+    "category": "electronics",
+    "createdAt": "2024-01-05",
+    "supplier": "TechCorp"
+  },
+  {
+    "id": 3,
+    "name": "Mechanical Keyboard",
+    "price": 150,
+    "stock": 12,
+    "category": "electronics",
+    "createdAt": "2024-01-15",
+    "supplier": "KeyTech"
+  },
+  {
+    "id": 4,
+    "name": "Monitor 4K",
+    "price": 399,
+    "stock": 8,
+    "category": "electronics",
+    "createdAt": "2024-01-08",
+    "supplier": "DisplayCo"
+  }
+]
+

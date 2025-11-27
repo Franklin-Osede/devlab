@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ORD-001",
+    "customerName": "John Doe",
+    "total": 250.50,
+    "status": "completed",
+    "createdAt": "2024-02-15T10:30:00Z",
+    "items": 3,
+    "paymentMethod": "credit_card"
+  },
+  {
+    "id": "ORD-002",
+    "customerName": "Jane Smith",
+    "total": 89.99,
+    "status": "pending",
+    "createdAt": "2024-02-14T14:20:00Z",
+    "items": 1,
+    "paymentMethod": "paypal"
+  },
+  {
+    "id": "ORD-003",
+    "customerName": "Bob Johnson",
+    "total": 450.00,
+    "status": "completed",
+    "createdAt": "2024-02-16T09:15:00Z",
+    "items": 5,
+    "paymentMethod": "credit_card"
+  },
+  {
+    "id": "ORD-004",
+    "customerName": "Alice Brown",
+    "total": 120.75,
+    "status": "cancelled",
+    "createdAt": "2024-02-13T16:45:00Z",
+    "items": 2,
+    "paymentMethod": "debit_card"
+  }
+]
+

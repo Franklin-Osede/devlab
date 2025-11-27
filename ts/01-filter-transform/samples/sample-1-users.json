@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Ana García",
+    "email": "ana@test.com",
+    "active": true,
+    "createdAt": "2024-01-15",
+    "role": "developer",
+    "department": "engineering"
+  },
+  {
+    "id": 2,
+    "name": "Luis Martínez",
+    "email": "luis@test.com",
+    "active": false,
+    "createdAt": "2024-01-01",
+    "role": "designer",
+    "department": "design"
+  },
+  {
+    "id": 3,
+    "name": "Carmen López",
+    "email": "carmen@test.com",
+    "active": true,
+    "createdAt": "2024-02-01",
+    "role": "manager",
+    "department": "product"
+  },
+  {
+    "id": 4,
+    "name": "Pedro Sánchez",
+    "email": "pedro@test.com",
+    "active": true,
+    "createdAt": "2024-01-20",
+    "role": "developer",
+    "department": "engineering"
+  }
+]
+

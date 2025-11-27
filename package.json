@@ -1,0 +1,29 @@
+{
+  "name": "devlab",
+  "version": "1.0.0",
+  "description": "40 ejercicios comunes de entrevistas - Práctica para pair programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:js": "jest js",
+    "test:ts": "jest ts",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "interview",
+    "pair-programming",
+    "coding-challenges",
+    "javascript",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3",
+    "ts-jest": "^29.1.1"
+  }
+}
+

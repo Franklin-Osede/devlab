@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ORD-001",
+    "customerName": "John Doe",
+    "total": 250.50,
+    "status": "completed"
+  },
+  {
+    "id": "ORD-002",
+    "customerName": "Jane Smith",
+    "total": 89.99,
+    "status": "pending"
+  },
+  {
+    "id": "ORD-003",
+    "customerName": "Bob Johnson",
+    "total": 450.00,
+    "status": "completed"
+  }
+]
+

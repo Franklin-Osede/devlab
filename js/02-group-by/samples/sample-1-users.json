@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ana García",
+    "country": "Spain",
+    "role": "developer",
+    "department": "engineering"
+  },
+  {
+    "id": 2,
+    "name": "Luis Martínez",
+    "country": "Mexico",
+    "role": "designer",
+    "department": "design"
+  },
+  {
+    "id": 3,
+    "name": "Carmen López",
+    "country": "Spain",
+    "role": "manager",
+    "department": "product"
+  },
+  {
+    "id": 4,
+    "name": "Pedro Sánchez",
+    "country": "Argentina",
+    "role": "developer",
+    "department": "engineering"
+  },
+  {
+    "id": 5,
+    "name": "María Rodríguez",
+    "country": "Spain",
+    "role": "designer",
+    "department": "design"
+  }
+]
+

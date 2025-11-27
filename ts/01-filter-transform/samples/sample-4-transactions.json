@@ -1,0 +1,39 @@
+[
+  {
+    "id": "TXN-001",
+    "amount": 1000,
+    "type": "deposit",
+    "verified": true,
+    "timestamp": "2024-02-20T08:00:00Z",
+    "accountId": "ACC-123",
+    "currency": "USD"
+  },
+  {
+    "id": "TXN-002",
+    "amount": 500,
+    "type": "withdrawal",
+    "verified": false,
+    "timestamp": "2024-02-19T12:30:00Z",
+    "accountId": "ACC-456",
+    "currency": "USD"
+  },
+  {
+    "id": "TXN-003",
+    "amount": 2500,
+    "type": "deposit",
+    "verified": true,
+    "timestamp": "2024-02-21T10:15:00Z",
+    "accountId": "ACC-123",
+    "currency": "USD"
+  },
+  {
+    "id": "TXN-004",
+    "amount": 750,
+    "type": "transfer",
+    "verified": true,
+    "timestamp": "2024-02-18T15:45:00Z",
+    "accountId": "ACC-789",
+    "currency": "USD"
+  }
+]
+

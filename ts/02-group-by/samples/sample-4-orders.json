@@ -1,0 +1,33 @@
+[
+  {
+    "id": "ORD-001",
+    "status": "completed",
+    "total": 250.50,
+    "createdAt": "2024-02-15"
+  },
+  {
+    "id": "ORD-002",
+    "status": "pending",
+    "total": 89.99,
+    "createdAt": "2024-02-14"
+  },
+  {
+    "id": "ORD-003",
+    "status": "completed",
+    "total": 450.00,
+    "createdAt": "2024-02-16"
+  },
+  {
+    "id": "ORD-004",
+    "status": "cancelled",
+    "total": 120.75,
+    "createdAt": "2024-02-13"
+  },
+  {
+    "id": "ORD-005",
+    "status": "pending",
+    "total": 75.00,
+    "createdAt": "2024-02-17"
+  }
+]
+

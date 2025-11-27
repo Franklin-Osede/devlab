@@ -1,0 +1,12 @@
+# 22 - Promise.all Personalizado
+
+## 📋 Enunciado
+
+Implementa tu propia versión de Promise.all.
+
+## ⏱️ Tiempo Esperado
+
+- Primera vez: 20-25 minutos
+- Con práctica: 7-10 minutos
+- En entrevista: 5-7 minutos
+

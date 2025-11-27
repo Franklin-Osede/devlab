@@ -1,0 +1,12 @@
+{
+  "default": {
+    "theme": "light",
+    "language": "en",
+    "notifications": true
+  },
+  "user": {
+    "theme": "dark",
+    "language": "es"
+  }
+}
+

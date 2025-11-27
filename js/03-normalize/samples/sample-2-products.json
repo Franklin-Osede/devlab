@@ -1,0 +1,21 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Laptop Pro",
+    "price": 1299,
+    "category": "electronics"
+  },
+  {
+    "id": "prod-002",
+    "name": "Wireless Mouse",
+    "price": 25,
+    "category": "electronics"
+  },
+  {
+    "id": "prod-003",
+    "name": "Mechanical Keyboard",
+    "price": 150,
+    "category": "electronics"
+  }
+]
+

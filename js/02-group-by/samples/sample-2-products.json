@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Pro",
+    "category": "electronics",
+    "price": 1299,
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "name": "Wireless Mouse",
+    "category": "electronics",
+    "price": 25,
+    "stock": 0
+  },
+  {
+    "id": 3,
+    "name": "Office Chair",
+    "category": "furniture",
+    "price": 299,
+    "stock": 12
+  },
+  {
+    "id": 4,
+    "name": "Monitor 4K",
+    "category": "electronics",
+    "price": 399,
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "name": "Desk Lamp",
+    "category": "furniture",
+    "price": 49,
+    "stock": 20
+  }
+]
+

@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Ana García",
+    "email": "ana@test.com",
+    "role": "developer"
+  },
+  {
+    "id": 2,
+    "name": "Luis Martínez",
+    "email": "luis@test.com",
+    "role": "designer"
+  },
+  {
+    "id": 3,
+    "name": "Carmen López",
+    "email": "carmen@test.com",
+    "role": "manager"
+  }
+]
+
