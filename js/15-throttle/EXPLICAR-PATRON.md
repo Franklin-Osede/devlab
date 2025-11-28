@@ -1,49 +1,80 @@
 # 🎤 Explicación del Patrón en Voz Alta
 
-## Script para Grabar tu Video de LinkedIn
+## Script para Grabar tu Video
 
 ### 📝 Lee esto en voz alta mientras grabas:
 
 ---
 
 **Hook (10 segundos):**
-"Te muestro cómo resolver [nombre del ejercicio] de memoria."
+"Throttle limita ejecuciones a máximo una vez por período. Te muestro la diferencia con debounce."
 
 ---
 
 **Leer el Problema (30 segundos):**
-"[Lee el problema del README.md]"
+"Necesito una función que limite ejecuciones a máximo una vez por período de tiempo.
+
+A diferencia de debounce que espera a que pare, throttle ejecuta inmediatamente y luego ignora llamadas hasta que pase el período.
+
+Por ejemplo, en scroll: ejecuto cada 100ms máximo, no importa cuántas veces se llame."
 
 ---
 
 **Explicar tu Enfoque Mental (30 segundos):**
 "Mi patrón mental para esto es:
 
-1. [Paso 1 del patrón]
-2. [Paso 2 del patrón]
-3. [Paso 3 del patrón]
+1. Guardar timestamp de la última ejecución
+2. Retornar función que recibe argumentos
+3. Verificar si ha pasado suficiente tiempo desde la última ejecución
+4. Si sí, ejecutar y actualizar timestamp
+5. Si no, ignorar la llamada
 
-Este patrón funciona porque..."
+La diferencia con debounce: throttle ejecuta periódicamente, debounce espera a que pare."
 
 ---
 
 **Escribir el Código Explicando (1-2 minutos):**
 "Voy a escribir la función paso a paso:
 
-[Explica cada línea mientras la escribes]"
+Guardo el timestamp de la última ejecución.
+[Escribe: let lastCall = 0;]
+
+Retorno una función que recibe los argumentos.
+[Escribe: return function(...args) { ... };]
+
+Obtengo el timestamp actual.
+[Escribe: const now = Date.now();]
+
+Verifico si ha pasado suficiente tiempo desde la última ejecución.
+[Escribe: if (now - lastCall >= delay) { ... }]
+
+Si sí, ejecuto la función y actualizo el timestamp.
+[Escribe: lastCall = now; fn.apply(this, args);]
+
+Si no, simplemente no hago nada. La llamada se ignora.
+
+Esto asegura que la función se ejecute máximo una vez por período."
 
 ---
 
 **Por Qué Importa (30 segundos):**
-"Este patrón lo uso en el trabajo cuando..."
+"Este patrón lo uso cuando:
+- Optimizo scroll handlers
+- Limito requests a APIs
+- Controlo animaciones
+- Gestiono eventos de mouse que se disparan muchas veces
+
+Throttle vs Debounce:
+- Throttle: ejecuta periódicamente (útil para scroll)
+- Debounce: espera a que pare (útil para búsquedas)
+
+Conocer ambos te hace mejor desarrollador frontend."
 
 ---
 
 ## 💡 Tips para el Video
 
-1. Habla claro y pausado
-2. Muestra tu pantalla completa
-3. Ejecuta los tests
-4. Sé auténtico
-5. Si te equivocas, corrígete
-
+1. Explica la diferencia entre throttle y debounce claramente
+2. Muestra cuándo usar cada uno
+3. Ejecuta tests para demostrar que limita ejecuciones
+4. Menciona casos de uso reales
