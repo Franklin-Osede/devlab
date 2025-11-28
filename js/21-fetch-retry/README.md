@@ -1,12 +1,11 @@
-# 21 - Fetch con Retries
+# 21 - Fetch with Retries
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un wrapper de fetch con reintentos automáticos y timeout.
+Implement a fetch wrapper with automatic retries and timeout.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

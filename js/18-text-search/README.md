@@ -1,12 +1,11 @@
-# 18 - Text Search con Scoring
+# 18 - Text Search with Scoring
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa búsqueda de texto que ordene resultados por relevancia (scoring).
+Implement text search that sorts results by relevance (scoring).
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

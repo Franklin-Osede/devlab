@@ -1,12 +1,11 @@
-# 32 - Refactor de Función Gigante
+# 32 - Refactor Giant Function
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Refactoriza la función `processOrder` dividiéndola en funciones pequeñas y testeables.
+Refactor the `processOrder` function by dividing it into small testable functions.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 30-40 minutos
-- Con práctica: 15-20 minutos
-- En entrevista: 10-15 minutos
-
+- First time: 30-40 minutes
+- With practice: 15-20 minutes
+- In interview: 10-15 minutes

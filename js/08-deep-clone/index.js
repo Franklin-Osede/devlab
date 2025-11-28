@@ -1,21 +1,24 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, recursive deep cloning
+// ============================================================================
 /**
- * Crea una copia profunda de un objeto o array
+ * Creates a deep copy of an object or array
  * 
- * @param {*} value - Valor a clonar
- * @returns {*} Copia profunda del valor
+ * @param {*} value - Value to clone
+ * @returns {*} Deep copy of the value
  */
 function deepClone(value) {
-  // 1. CASOS BASE: primitivos, null, undefined
+  // 1. BASE CASES: primitives, null, undefined
   if (value === null || typeof value !== 'object') {
     return value;
   }
 
-  // 2. SI ES ARRAY: clonar cada elemento
+  // 2. IF ARRAY: clone each element
   if (Array.isArray(value)) {
     return value.map(deepClone);
   }
 
-  // 3. SI ES OBJETO: clonar cada propiedad
+  // 3. IF OBJECT: clone each property
   const cloned = {};
   for (const key in value) {
     if (Object.prototype.hasOwnProperty.call(value, key)) {
@@ -26,4 +29,3 @@ function deepClone(value) {
 }
 
 module.exports = { deepClone };
-

@@ -1,26 +1,29 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, uses Set for tracking
+// ============================================================================
 /**
- * Elimina elementos duplicados usando una estrategia configurable
+ * Removes duplicate elements using a configurable strategy
  * 
- * @param {Array} items - Array de elementos
- * @param {string|Function} keyOrFn - Propiedad o función para determinar unicidad
- * @returns {Array} Array sin duplicados
+ * @param {Array} items - Array of elements
+ * @param {string|Function} keyOrFn - Property or function to determine uniqueness
+ * @returns {Array} Array without duplicates
  */
 function uniqueBy(items, keyOrFn) {
   if (!Array.isArray(items)) return [];
 
   const seen = new Set();
   
-  // Determinar función de clave
+  // Determine key function
   const getKey =
     typeof keyOrFn === 'function'
       ? keyOrFn
       : typeof keyOrFn === 'string'
       ? (item) => item?.[keyOrFn]
-      : (item) => item; // Identidad si no se proporciona
+      : (item) => item; // Identity if not provided
 
   return items.filter(item => {
     const key = getKey(item);
-    // Manejar null/undefined como claves válidas
+    // Handle null/undefined as valid keys
     const keyToCheck = key === null || key === undefined ? Symbol('nullish') : key;
     
     if (seen.has(keyToCheck)) return false;
@@ -30,4 +33,3 @@ function uniqueBy(items, keyOrFn) {
 }
 
 module.exports = { uniqueBy };
-

@@ -1,15 +1,18 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, recursive deep comparison
+// ============================================================================
 /**
- * Compara dos valores profundamente
+ * Compares two values deeply
  * 
- * @param {*} a - Primer valor
- * @param {*} b - Segundo valor
- * @returns {boolean} true si son iguales profundamente
+ * @param {*} a - First value
+ * @param {*} b - Second value
+ * @returns {boolean} true if deeply equal
  */
 function deepEqual(a, b) {
-  // 1. COMPARACIÓN ESTRICTA (cubre primitivos, null, undefined)
+  // 1. STRICT COMPARISON (covers primitives, null, undefined)
   if (a === b) return true;
 
-  // 2. VALIDAR QUE AMBOS SEAN OBJETOS
+  // 2. VALIDATE THAT BOTH ARE OBJECTS
   if (
     typeof a !== 'object' ||
     typeof b !== 'object' ||
@@ -19,14 +22,14 @@ function deepEqual(a, b) {
     return false;
   }
 
-  // 3. OBTENER CLAVES DE AMBOS OBJETOS
+  // 3. GET KEYS FROM BOTH OBJECTS
   const keysA = Object.keys(a);
   const keysB = Object.keys(b);
 
-  // 4. VERIFICAR MISMO NÚMERO DE CLAVES
+  // 4. CHECK SAME NUMBER OF KEYS
   if (keysA.length !== keysB.length) return false;
 
-  // 5. COMPARAR CADA CLAVE RECURSIVAMENTE
+  // 5. COMPARE EACH KEY RECURSIVELY
   for (const key of keysA) {
     if (!keysB.includes(key)) return false;
     if (!deepEqual(a[key], b[key])) return false;
@@ -36,4 +39,3 @@ function deepEqual(a, b) {
 }
 
 module.exports = { deepEqual };
-

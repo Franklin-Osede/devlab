@@ -1,23 +1,23 @@
 # 02 - Group By
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Agrupa elementos de un array por una propiedad específica o por el resultado de una función.
+Group array elements by a specific property or by the result of a function.
 
-Dado un array de elementos y una clave (string) o función, devuelve un objeto donde:
-- Las **claves** son los valores únicos de esa propiedad/función
-- Los **valores** son arrays con todos los elementos que tienen esa clave
+Given an array of elements and a key (string) or function, return an object where:
+- The **keys** are the unique values of that property/function
+- The **values** are arrays with all elements that have that key
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si el input no es un array, devolver `{}`
-- Debe funcionar con string (nombre de propiedad) o función
-- Manejar elementos donde la propiedad no existe
-- Retornar objeto vacío si el array está vacío
+- If input is not an array, return `{}`
+- Must work with string (property name) or function
+- Handle elements where the property doesn't exist
+- Return empty object if array is empty
 
-## 💡 Ejemplos
+## 💡 Examples
 
-### Ejemplo 1: Agrupar por propiedad
+### Example 1: Group by property
 ```javascript
 const users = [
   { id: 1, name: "Ana", country: "Spain" },
@@ -26,28 +26,27 @@ const users = [
 ];
 
 groupBy(users, "country");
-// Resultado: { Spain: [user1, user3], Mexico: [user2] }
+// Result: { Spain: [user1, user3], Mexico: [user2] }
 ```
 
-### Ejemplo 2: Agrupar por función
+### Example 2: Group by function
 ```javascript
 const numbers = [1, 2, 3, 4, 5, 6];
 
 groupBy(numbers, n => n % 2 === 0 ? "even" : "odd");
-// Resultado: { even: [2, 4, 6], odd: [1, 3, 5] }
+// Result: { even: [2, 4, 6], odd: [1, 3, 5] }
 ```
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input** → `if (!Array.isArray(items)) return {}`
-2. **Determinar función de clave** → string o función
-3. **Crear objeto acumulador** → `{}`
-4. **Iterar y agrupar** → `reduce` o `forEach`
-5. **Retornar objeto agrupado**
+1. **Validate input** → `if (!Array.isArray(items)) return {}`
+2. **Determine key function** → string or function
+3. **Create accumulator object** → `{}`
+4. **Iterate and group** → `reduce` or `forEach`
+5. **Return grouped object**
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

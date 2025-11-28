@@ -1,30 +1,32 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, efficient counting and sorting
+// ============================================================================
 /**
- * Devuelve los N elementos más frecuentes de un array
+ * Returns the N most frequent elements of an array
  * 
- * @param {Array} items - Array de elementos
- * @param {number} n - Número de elementos a retornar
- * @returns {Array} Array con los N elementos más frecuentes
+ * @param {Array} items - Array of elements
+ * @param {number} n - Number of elements to return
+ * @returns {Array} Array with the N most frequent elements
  */
 function topNFrequent(items, n) {
-  // 1. VALIDAR INPUT
+  // 1. VALIDATE INPUT
   if (!Array.isArray(items) || n <= 0) return [];
 
-  // 2. CONTAR OCURRENCIAS
+  // 2. COUNT OCCURRENCES
   const counts = items.reduce((acc, item) => {
     acc[item] = (acc[item] || 0) + 1;
     return acc;
   }, {});
 
-  // 3. CONVERTIR A ARRAY, ORDENAR Y TOMAR PRIMEROS N
+  // 3. CONVERT TO ARRAY, SORT AND TAKE FIRST N
   return Object.entries(counts)
     .sort(([, countA], [, countB]) => countB - countA)
     .slice(0, n)
     .map(([value]) => {
-      // Intentar convertir a número si es posible, sino mantener string
+      // Try to convert to number if possible, otherwise keep string
       const numValue = Number(value);
       return isNaN(numValue) || value !== String(numValue) ? value : numValue;
     });
 }
 
 module.exports = { topNFrequent };
-

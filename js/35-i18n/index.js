@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Simple internationalization system
+// ============================================================================
 /**
- * Sistema de internacionalización simple
+ * Simple internationalization system
  */
 function createI18n(translations, defaultLocale = 'en') {
   return {
@@ -17,4 +20,3 @@ function createI18n(translations, defaultLocale = 'en') {
 }
 
 module.exports = { createI18n };
-

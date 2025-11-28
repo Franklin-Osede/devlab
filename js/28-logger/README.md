@@ -1,12 +1,11 @@
-# 28 - Logger Configurable
+# 28 - Configurable Logger
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un logger con niveles (debug, info, warn, error) y salida configurable.
+Implement a logger with levels (debug, info, warn, error) and configurable output.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

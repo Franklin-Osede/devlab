@@ -1,12 +1,11 @@
-# 40 - Debugging Intencionado
+# 40 - Intentional Debugging
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-La función `calculateTotal` tiene varios bugs. Encuéntralos y corrígelos.
+The `calculateTotal` function has several bugs. Find and fix them.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 10-15 minutos
-- En entrevista: 7-10 minutos
-
+- First time: 20-25 minutes
+- With practice: 10-15 minutes
+- In interview: 7-10 minutes

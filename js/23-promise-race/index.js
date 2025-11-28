@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Custom Promise.race implementation
+// ============================================================================
 /**
- * Implementación propia de Promise.race
+ * Custom Promise.race implementation
  */
 function promiseRace(promises) {
   return new Promise((resolve, reject) => {
@@ -16,4 +19,3 @@ function promiseRace(promises) {
 }
 
 module.exports = { promiseRace };
-

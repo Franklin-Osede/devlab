@@ -1,16 +1,18 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure functions, functional composition
+// ============================================================================
 /**
- * Implementa pipe: ejecuta funciones de izquierda a derecha
+ * Implements pipe: executes functions from left to right
  */
 function pipe(...fns) {
   return (value) => fns.reduce((acc, fn) => fn(acc), value);
 }
 
 /**
- * Implementa compose: ejecuta funciones de derecha a izquierda
+ * Implements compose: executes functions from right to left
  */
 function compose(...fns) {
   return (value) => fns.reduceRight((acc, fn) => fn(acc), value);
 }
 
 module.exports = { pipe, compose };
-

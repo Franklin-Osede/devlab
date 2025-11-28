@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - In-memory rate limiter
+// ============================================================================
 /**
- * Rate limiter simple en memoria
+ * Simple in-memory rate limiter
  */
 function createRateLimiter(maxRequests, windowMs) {
   const requests = new Map();
@@ -8,7 +11,7 @@ function createRateLimiter(maxRequests, windowMs) {
     const now = Date.now();
     const userRequests = requests.get(userId) || [];
     
-    // Limpiar requests fuera de la ventana
+    // Clean requests outside the window
     const validRequests = userRequests.filter(time => now - time < windowMs);
     
     if (validRequests.length >= maxRequests) {
@@ -22,4 +25,3 @@ function createRateLimiter(maxRequests, windowMs) {
 }
 
 module.exports = { createRateLimiter };
-

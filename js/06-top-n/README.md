@@ -1,29 +1,28 @@
-# 06 - Top N Más Frecuentes
+# 06 - Top N Most Frequent
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Dado un array de elementos (strings, números, etc.), devuelve los N elementos más frecuentes.
+Given an array of elements (strings, numbers, etc.), return the N most frequent elements.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si el input no es array o n <= 0, devolver `[]`
-- Contar ocurrencias de cada elemento
-- Ordenar por frecuencia descendente
-- Retornar solo los primeros N elementos
-- Manejar empates (mantener orden original)
+- If input is not array or n <= 0, return `[]`
+- Count occurrences of each element
+- Sort by frequency descending
+- Return only the first N elements
+- Handle ties (maintain original order)
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input**
-2. **Contar ocurrencias** (usar Map u objeto)
-3. **Convertir a array** de [valor, count]
-4. **Ordenar por count** descendente
-5. **Tomar primeros N** y extraer valores
-6. **Retornar** array de valores
+1. **Validate input**
+2. **Count occurrences** (use Map or object)
+3. **Convert to array** of [value, count]
+4. **Sort by count** descending
+5. **Take first N** and extract values
+6. **Return** array of values
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

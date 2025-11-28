@@ -1,12 +1,11 @@
-# 24 - Cola con Concurrencia Limitada
+# 24 - Queue with Limited Concurrency
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa una cola que ejecute N tareas en paralelo como máximo.
+Implement a queue that executes N tasks in parallel at most.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 25-30 minutos
-- Con práctica: 10-15 minutos
-- En entrevista: 7-10 minutos
-
+- First time: 25-30 minutes
+- With practice: 10-15 minutes
+- In interview: 7-10 minutes

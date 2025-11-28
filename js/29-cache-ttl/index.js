@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - In-memory cache with TTL and periodic cleanup
+// ============================================================================
 /**
- * Cache con TTL y limpieza periódica
+ * Cache with TTL and periodic cleanup
  */
 function createCache(ttlMs = 60000) {
   const cache = new Map();
@@ -42,4 +45,3 @@ function createCache(ttlMs = 60000) {
 }
 
 module.exports = { createCache };
-

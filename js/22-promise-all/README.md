@@ -1,12 +1,11 @@
-# 22 - Promise.all Personalizado
+# 22 - Custom Promise.all
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa tu propia versión de Promise.all.
+Implement your own version of Promise.all.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

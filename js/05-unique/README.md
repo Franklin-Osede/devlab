@@ -1,32 +1,31 @@
-# 05 - Eliminar Duplicados
+# 05 - Remove Duplicates
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Elimina elementos duplicados de un array usando una estrategia configurable.
+Remove duplicate elements from an array using a configurable strategy.
 
-Implementa `uniqueBy(items, keyOrFn)` que:
-- Si `keyOrFn` es string: elimina duplicados por esa propiedad
-- Si `keyOrFn` es función: elimina duplicados por el resultado de la función
-- Si no se proporciona: elimina duplicados por valor
+Implement `uniqueBy(items, keyOrFn)` that:
+- If `keyOrFn` is string: removes duplicates by that property
+- If `keyOrFn` is function: removes duplicates by function result
+- If not provided: removes duplicates by value
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si el input no es array, devolver `[]`
-- Mantener el primer elemento de cada duplicado
-- Funcionar con primitivos y objetos
-- Manejar casos edge (null, undefined)
+- If input is not array, return `[]`
+- Keep the first element of each duplicate
+- Work with primitives and objects
+- Handle edge cases (null, undefined)
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input**
-2. **Determinar función de clave** (string, función, o identidad)
-3. **Usar Set para tracking** de claves vistas
-4. **Filtrar** manteniendo solo primeros
-5. **Retornar** array único
+1. **Validate input**
+2. **Determine key function** (string, function, or identity)
+3. **Use Set for tracking** seen keys
+4. **Filter** keeping only firsts
+5. **Return** unique array
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

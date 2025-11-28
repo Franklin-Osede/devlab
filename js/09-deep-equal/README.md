@@ -1,28 +1,27 @@
 # 09 - Deep Equal
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Compara dos valores profundamente, verificando que todos los objetos y arrays anidados sean iguales.
+Compare two values deeply, verifying that all nested objects and arrays are equal.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Comparar objetos y arrays anidados recursivamente
-- Comparar primitivos con ===
-- Verificar mismo número de claves en objetos
-- Verificar mismo orden y valores en arrays
-- Manejar null y undefined
+- Compare nested objects and arrays recursively
+- Compare primitives with ===
+- Verify same number of keys in objects
+- Verify same order and values in arrays
+- Handle null and undefined
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Comparar con ===** → si son iguales, retornar true
-2. **Validar tipos** → ambos deben ser objetos
-3. **Comparar claves** → mismo número y mismas claves
-4. **Comparar valores** → recursivamente para cada clave
-5. **Retornar** true si todo coincide
+1. **Compare with ===** → if equal, return true
+2. **Validate types** → both must be objects
+3. **Compare keys** → same number and same keys
+4. **Compare values** → recursively for each key
+5. **Return** true if everything matches
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

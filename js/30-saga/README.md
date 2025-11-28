@@ -1,12 +1,11 @@
 # 30 - Saga/Transactional Workflow
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un patrón saga para ejecutar pasos con rollback automático si falla.
+Implement a saga pattern to execute steps with automatic rollback if it fails.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 25-30 minutos
-- Con práctica: 10-15 minutos
-- En entrevista: 7-10 minutos
-
+- First time: 25-30 minutes
+- With practice: 10-15 minutes
+- In interview: 7-10 minutes

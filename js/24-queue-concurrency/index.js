@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Async queue with limited concurrency
+// ============================================================================
 /**
- * Cola de tareas async con concurrencia limitada
+ * Async task queue with limited concurrency
  */
 async function runQueue(tasks, concurrency = 2) {
   const results = [];
@@ -39,4 +42,3 @@ async function runQueue(tasks, concurrency = 2) {
 }
 
 module.exports = { runQueue };
-

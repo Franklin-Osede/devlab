@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Custom Promise.all implementation
+// ============================================================================
 /**
- * Implementación propia de Promise.all
+ * Custom Promise.all implementation
  */
 function promiseAll(promises) {
   return new Promise((resolve, reject) => {
@@ -26,4 +29,3 @@ function promiseAll(promises) {
 }
 
 module.exports = { promiseAll };
-

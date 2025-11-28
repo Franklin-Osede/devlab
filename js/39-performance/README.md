@@ -1,12 +1,11 @@
-# 39 - Medición de Performance
+# 39 - Performance Measurement
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa wrappers para medir el tiempo de ejecución de funciones.
+Implement wrappers to measure function execution time.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

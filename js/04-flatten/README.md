@@ -1,29 +1,28 @@
 # 04 - Flatten Arrays
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Aplana un array anidado a un solo nivel o completamente (según la profundidad especificada).
+Flatten a nested array to a single level or completely (depending on specified depth).
 
-Implementa `flatten(array, depth = Infinity)` sin usar `.flat()` nativo.
+Implement `flatten(array, depth = Infinity)` without using native `.flat()`.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si el input no es un array, devolverlo tal cual
-- Si depth es 0, devolver el array sin modificar
-- Si depth es Infinity, aplanar completamente
-- Manejar arrays vacíos y arrays anidados profundos
+- If input is not an array, return it as is
+- If depth is 0, return array without modification
+- If depth is Infinity, flatten completely
+- Handle empty arrays and deeply nested arrays
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input** → si no es array, retornar tal cual
-2. **Verificar depth** → si es 0, retornar sin modificar
-3. **Recursión** → si es array y depth > 0, aplanar recursivamente
-4. **Concatenar** → unir arrays aplanados
-5. **Retornar** → array plano
+1. **Validate input** → if not array, return as is
+2. **Check depth** → if 0, return without modification
+3. **Recursion** → if array and depth > 0, flatten recursively
+4. **Concatenate** → join flattened arrays
+5. **Return** → flat array
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

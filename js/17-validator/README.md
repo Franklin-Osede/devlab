@@ -1,12 +1,11 @@
-# 17 - Validador de Esquema
+# 17 - Schema Validator
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un validador que verifique datos contra un esquema con reglas (required, type, min, max).
+Implement a validator that verifies data against a schema with rules (required, type, min, max).
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

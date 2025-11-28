@@ -1,24 +1,24 @@
-# 03 - Normalizar Datos
+# 03 - Normalize Data
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Convierte un array de objetos con `id` en un objeto donde las claves son los `id` y los valores son los objetos completos.
+Convert an array of objects with `id` into an object where keys are the `id` values and values are the complete objects.
 
-Esto es útil para:
-- Optimizar búsquedas por ID (O(1) en vez de O(n))
-- Crear índices de datos
-- Preparar datos para estados de React/Redux
+This is useful for:
+- Optimizing ID lookups (O(1) instead of O(n))
+- Creating data indexes
+- Preparing data for React/Redux states
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si el input no es un array, devolver `{}`
-- Si un objeto no tiene `id`, saltarlo
-- Manejar `id` duplicados (el último sobrescribe)
-- Retornar objeto vacío si el array está vacío
+- If input is not an array, return `{}`
+- If an object doesn't have `id`, skip it
+- Handle duplicate `id` (last one overwrites)
+- Return empty object if array is empty
 
-## 💡 Ejemplos
+## 💡 Examples
 
-### Ejemplo 1: Usuarios
+### Example 1: Users
 ```javascript
 const users = [
   { id: 1, name: "Ana", email: "ana@test.com" },
@@ -26,10 +26,10 @@ const users = [
 ];
 
 normalizeById(users);
-// Resultado: { 1: { id: 1, name: "Ana", ... }, 2: { id: 2, name: "Luis", ... } }
+// Result: { 1: { id: 1, name: "Ana", ... }, 2: { id: 2, name: "Luis", ... } }
 ```
 
-### Ejemplo 2: Productos
+### Example 2: Products
 ```javascript
 const products = [
   { id: "prod-1", name: "Laptop", price: 999 },
@@ -37,20 +37,19 @@ const products = [
 ];
 
 normalizeById(products);
-// Resultado: { "prod-1": {...}, "prod-2": {...} }
+// Result: { "prod-1": {...}, "prod-2": {...} }
 ```
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input** → `if (!Array.isArray(items)) return {}`
-2. **Crear objeto acumulador** → `{}`
-3. **Iterar y asignar** → `reduce` o `forEach`
-4. **Usar id como clave** → `acc[item.id] = item`
-5. **Retornar objeto normalizado**
+1. **Validate input** → `if (!Array.isArray(items)) return {}`
+2. **Create accumulator object** → `{}`
+3. **Iterate and assign** → `reduce` or `forEach`
+4. **Use id as key** → `acc[item.id] = item`
+5. **Return normalized object**
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 10-15 minutos
-- Con práctica: 3-5 minutos
-- En entrevista: 2-3 minutos
-
+- First time: 10-15 minutes
+- With practice: 3-5 minutes
+- In interview: 2-3 minutes

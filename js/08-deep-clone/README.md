@@ -1,27 +1,26 @@
 # 08 - Deep Clone
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Crea una copia profunda (deep copy) de un objeto o array, clonando todos los objetos y arrays anidados.
+Create a deep copy of an object or array, cloning all nested objects and arrays.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Clonar objetos y arrays anidados recursivamente
-- Manejar primitivos (retornar tal cual)
-- Manejar null y undefined
-- No clonar funciones, Date, Map, Set (versión simple)
-- Retornar nuevo objeto/array sin referencias compartidas
+- Clone nested objects and arrays recursively
+- Handle primitives (return as is)
+- Handle null and undefined
+- Don't clone functions, Date, Map, Set (simple version)
+- Return new object/array without shared references
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar tipo** → si es primitivo, retornar tal cual
-2. **Si es array** → clonar cada elemento recursivamente
-3. **Si es objeto** → clonar cada propiedad recursivamente
-4. **Retornar** nuevo objeto/array
+1. **Validate type** → if primitive, return as is
+2. **If array** → clone each element recursively
+3. **If object** → clone each property recursively
+4. **Return** new object/array
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

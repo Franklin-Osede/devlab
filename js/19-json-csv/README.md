@@ -1,12 +1,11 @@
-# 19 - Conversión JSON ↔ CSV
+# 19 - JSON ↔ CSV Conversion
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa conversión entre JSON y CSV (versión simple).
+Implement conversion between JSON and CSV (simple version).
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 25-30 minutos
-- Con práctica: 10-15 minutos
-- En entrevista: 7-10 minutos
-
+- First time: 25-30 minutes
+- With practice: 10-15 minutes
+- In interview: 7-10 minutes

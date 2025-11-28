@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, uses timestamp for rate limiting
+// ============================================================================
 /**
- * Throttle: limita ejecución a máximo una vez por período de tiempo
+ * Throttle: limits execution to maximum once per time period
  */
 function throttle(fn, delay) {
   let lastCall = 0;
@@ -14,4 +17,3 @@ function throttle(fn, delay) {
 }
 
 module.exports = { throttle };
-

@@ -1,90 +1,50 @@
-# 🎤 Explicación del Patrón en Voz Alta
+# 🎥 Script for LinkedIn Video: 01 - Filter and Transform (JavaScript)
 
-## Script para Grabar tu Video de LinkedIn
+## 🚀 Hook (0-15 seconds)
+"Do you know how to efficiently transform data from an API? Today I'll show you a key pattern you'll use daily as a developer."
 
-### 📝 Lee esto en voz alta mientras grabas:
+## 📝 Problem (15-45 seconds)
+"Imagine you receive a list of users from an API. You need to show only active users, sort them by creation date, and display only their ID, name, and email. How would you do it cleanly and professionally?"
 
----
+*(Show an example of input and output on screen)*
 
-**Hook (10 segundos):**
-"¿Sabes cuál es el ejercicio MÁS común en entrevistas de pair programming? Te muestro cómo resolverlo de memoria."
+## 🧠 My Mental Approach (45-90 seconds)
+"To solve this, my brain thinks in 4 key steps, like an assembly line:
+1. **Validation**: First, I always verify that the input is valid. Is it an array?
+2. **Filtering**: Then, I get rid of what I don't need. In this case, inactive users.
+3. **Sorting**: Next, I organize the data as requested. Here, by creation date.
+4. **Transformation**: Finally, I give the data the exact shape I need, selecting only relevant properties.
 
----
+This 'Validate → Filter → Sort → Transform' pattern is universal."
 
-**Leer el Problema (30 segundos):**
-"Hoy voy a resolver este problema:
+## 💻 Code Step by Step (90-240 seconds)
+"Let's write the code. I start with the `getActiveUsers` function that receives `users`.
 
-Tengo una lista de usuarios y necesito:
-- Filtrar solo los activos
-- Ordenarlos por fecha de creación
-- Y devolver solo id, name y email
+```javascript
+function getActiveUsers(users) {
+  // STEP 1: Validate input. If it's not an array, return an empty array to avoid errors.
+  if (!Array.isArray(users)) return [];
 
-Básicamente necesito procesar un array de objetos y transformarlo."
+  // STEP 2, 3, and 4: Chain operations with modern array methods.
+  return users
+    // First, filter. We only want users where 'active' is true.
+    .filter(user => user?.active)
+    // Then, sort. We use 'sort' and subtract dates to sort ascending.
+    .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+    // Finally, transform. With 'map', we create a new object with only 'id', 'name', and 'email'.
+    .map(user => ({
+      id: user.id,
+      name: user.name,
+      email: user.email,
+    }));
+}
+```
+"As you can see, the code is concise and follows the logic we thought about. Each step is a clear operation on the array."
 
----
+## 💡 Why It's Important (240-270 seconds)
+"Mastering this pattern makes you a very valuable developer. You don't just write code, you think structured, which is crucial in pair programming and day-to-day work. You demonstrate that you can:
+- Handle API data.
+- Write readable and maintainable code.
+- Think about robustness (input validation).
 
-**Explicar tu Enfoque Mental (30 segundos):**
-"Mi patrón mental para esto siempre es el mismo, y funciona para el 80% de ejercicios de arrays:
-
-1. Primero valido el input - porque en producción siempre recibes datos inesperados
-2. Luego filtro - solo los elementos que cumplen la condición
-3. Ordeno - por la propiedad que necesito
-4. Transformo - a solo las propiedades que necesito
-5. Retorno - el resultado final
-
-Esta estructura mental me ayuda a no bloquearme y escribir código rápido."
-
----
-
-**Escribir el Código Explicando (1-2 minutos):**
-"Voy a escribir la función paso a paso:
-
-Primero, valido que sea un array. Si no lo es, retorno un array vacío.
-[Escribe: if (!Array.isArray(users)) return [];]
-
-Ahora voy a filtrar solo los usuarios activos. Uso optional chaining para seguridad.
-[Escribe: .filter(user => user?.active)]
-
-Luego ordeno por fecha de creación ascendente. Comparo las fechas convirtiéndolas a Date.
-[Escribe: .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))]
-
-Y finalmente transformo a solo las propiedades que necesito: id, name y email.
-[Escribe: .map(user => ({ id: user.id, name: user.name, email: user.email }))]
-
-Listo. Ahora ejecuto los tests para verificar que funciona.
-[Ejecuta: npm test js/01-filter-transform]"
-
----
-
-**Por Qué Importa (30 segundos):**
-"Este patrón lo uso TODOS los días en el trabajo:
-- Cuando proceso datos de APIs
-- Cuando preparo datos para componentes React o Angular
-- Cuando filtro listas en dashboards
-- Cuando limpio respuestas de backend
-
-No es solo código, es pensamiento estructurado. Dominar este patrón te hace rápido y confiable en cualquier proyecto."
-
----
-
-**Call to Action (10 segundos):**
-"¿Quieres ver más ejercicios como este? Sigue mi perfil para más contenido de programación práctica."
-
----
-
-## 💡 Tips para el Video
-
-1. **Habla claro y pausado** - No tengas prisa
-2. **Muestra tu pantalla completa** - Que se vea el código bien
-3. **Ejecuta los tests** - Demuestra que funciona
-4. **Sé auténtico** - No intentes ser perfecto, sé tú mismo
-5. **Si te equivocas, corrígete** - Muestra cómo debuggeas, eso también es valioso
-
-## 🎯 Frases Clave que Debes Decir
-
-- "Mi patrón mental es..."
-- "Primero valido porque..."
-- "Uso [método] para..."
-- "Esto lo hago todos los días cuando..."
-- "El código sale solo cuando piensas en pasos verbales"
-
+Practice this pattern and you'll see how your problem-solving ability skyrockets!"

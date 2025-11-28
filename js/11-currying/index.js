@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, handles partial application
+// ============================================================================
 /**
- * Implementa currying: convierte función de múltiples argumentos en cadena de funciones
+ * Implements currying: converts function with multiple arguments into chain of functions
  */
 function curry(fn) {
   return function curried(...args) {
@@ -13,4 +16,3 @@ function curry(fn) {
 }
 
 module.exports = { curry };
-

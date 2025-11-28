@@ -1,25 +1,25 @@
-# Solución: Group By
+# Solution: Group By
 
-## 🧠 Patrón Mental (MEMORIZAR ESTO)
+## 🧠 Mental Pattern (MEMORIZE THIS)
 
-Este patrón es **súper común** cuando necesitas organizar datos para dashboards, reportes, o agrupaciones en UI.
+This pattern is **super common** when you need to organize data for dashboards, reports, or UI groupings.
 
-### Estructura Universal
+### Universal Structure
 
 ```javascript
 function groupBy(items, keyOrFn) {
-  // 1. VALIDAR INPUT
+  // 1. VALIDATE INPUT
   if (!Array.isArray(items)) return {};
   
-  // 2. DETERMINAR FUNCIÓN DE CLAVE
+  // 2. DETERMINE KEY FUNCTION
   const getKey = typeof keyOrFn === 'function' 
     ? keyOrFn 
     : (item) => item?.[keyOrFn];
   
-  // 3. REDUCIR A OBJETO AGRUPADO
+  // 3. REDUCE TO GROUPED OBJECT
   return items.reduce((groups, item) => {
     const key = getKey(item);
-    if (key === undefined) return groups; // Saltar si no hay clave
+    if (key === undefined) return groups; // Skip if no key
     
     if (!groups[key]) {
       groups[key] = [];
@@ -30,45 +30,45 @@ function groupBy(items, keyOrFn) {
 }
 ```
 
-## 📝 Explicación Paso a Paso
+## 📝 Step-by-Step Explanation
 
-### Paso 1: Validación
+### Step 1: Validation
 ```javascript
 if (!Array.isArray(items)) return {};
 ```
 
-### Paso 2: Función de Clave Flexible
-**¿Por qué?** Porque a veces agrupas por propiedad, otras por resultado de función.
+### Step 2: Flexible Key Function
+**Why?** Because sometimes you group by property, other times by function result.
 
 ```javascript
 const getKey = typeof keyOrFn === 'function'
-  ? keyOrFn                    // Si es función, úsala directamente
-  : (item) => item?.[keyOrFn]; // Si es string, accede a la propiedad
+  ? keyOrFn                    // If function, use it directly
+  : (item) => item?.[keyOrFn]; // If string, access the property
 ```
 
-### Paso 3: Reducir a Objeto
-**¿Por qué `reduce`?** Porque transformas un array en un objeto. Es el método perfecto.
+### Step 3: Reduce to Object
+**Why `reduce`?** Because you transform an array into an object. It's the perfect method.
 
 ```javascript
 return items.reduce((groups, item) => {
   const key = getKey(item);
   
-  // Si la clave no existe, saltar el elemento
+  // If key doesn't exist, skip the element
   if (key === undefined) return groups;
   
-  // Si el grupo no existe, crearlo
+  // If group doesn't exist, create it
   if (!groups[key]) {
     groups[key] = [];
   }
   
-  // Añadir el elemento al grupo
+  // Add element to group
   groups[key].push(item);
   
   return groups;
 }, {});
 ```
 
-## ✅ Código Final (Memorizar la estructura)
+## ✅ Final Code (Memorize the structure)
 
 ```javascript
 function groupBy(items, keyOrFn) {
@@ -92,37 +92,19 @@ function groupBy(items, keyOrFn) {
 }
 ```
 
-## 🎥 Script para Video de LinkedIn
+## 🔑 Key Points to Memorize
 
-### Intro (10 seg)
-"Group By es uno de los ejercicios más útiles en el trabajo real. Te muestro cómo hacerlo bien."
+1. **Use `reduce` to transform array → object**
+2. **Support string OR function as key**
+3. **Handle undefined keys (skip element)**
+4. **Initialize empty arrays when creating a new group**
+5. **Return empty object if invalid input**
 
-### El Problema (20 seg)
-"Tienes una lista de usuarios y necesitas agruparlos por país. O una lista de números y agruparlos por par/impar."
+## 🎯 Common Variations
 
-### Tu Enfoque Mental (30 seg)
-"Mi patrón: validar → determinar función de clave (string o función) → usar reduce para construir el objeto agrupado. Reduce es perfecto porque transformas array → objeto."
+- Group by multiple properties (composite key)
+- Group and count (numbers instead of arrays)
+- Group and transform (group then map each group)
+- Group with specific order
 
-### El Código (1 min)
-"Primero valido el input. Luego creo una función getKey que funciona con string o función. Uso reduce porque transformo array en objeto. Si la clave no existe, creo el array. Luego añado el elemento."
-
-### Por Qué Importa (20 seg)
-"Lo usas en dashboards, reportes, agrupaciones en UI, análisis de datos. Es un patrón que aparece constantemente en el trabajo real."
-
-## 🔑 Puntos Clave para Memorizar
-
-1. **Usa `reduce` para transformar array → objeto**
-2. **Soporta string O función como clave**
-3. **Maneja claves undefined (saltar elemento)**
-4. **Inicializa arrays vacíos cuando creas un grupo nuevo**
-5. **Retorna objeto vacío si input inválido**
-
-## 🎯 Variaciones Comunes
-
-- Agrupar por múltiples propiedades (clave compuesta)
-- Agrupar y contar (en vez de arrays, números)
-- Agrupar y transformar (agrupar y luego mapear cada grupo)
-- Agrupar con orden específico
-
-**Todas siguen el mismo patrón mental con reduce.**
-
+**All follow the same mental pattern with reduce.**

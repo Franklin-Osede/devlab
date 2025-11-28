@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Error transformer to standard format
+// ============================================================================
 /**
- * Transformador de errores a formato estándar
+ * Error transformer to standard format
  */
 function transformError(error) {
   if (error instanceof Error) {
@@ -34,4 +37,3 @@ function transformError(error) {
 }
 
 module.exports = { transformError };
-

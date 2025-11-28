@@ -1,49 +1,16 @@
-# 🎤 Explicación del Patrón en Voz Alta
+# 🎥 Script for LinkedIn Video: 02 - Group By (JavaScript)
 
-## Script para Grabar tu Video de LinkedIn
+## 🚀 Hook (0-15 seconds)
+"Group By is one of the most useful exercises in real work. Let me show you how to do it right."
 
-### 📝 Lee esto en voz alta mientras grabas:
+## 📝 Problem (15-45 seconds)
+"You have a list of users and need to group them by country. Or a list of numbers and group them by even/odd."
 
----
+## 🧠 My Mental Approach (45-90 seconds)
+"My pattern: validate → determine key function (string or function) → use reduce to build the grouped object. Reduce is perfect because you transform array → object."
 
-**Hook (10 segundos):**
-"Te muestro cómo resolver [nombre del ejercicio] de memoria."
+## 💻 Code Step by Step (90-240 seconds)
+"First I validate the input. Then I create a getKey function that works with string or function. I use reduce because I transform array into object. If the key doesn't exist, I create the array. Then I add the element."
 
----
-
-**Leer el Problema (30 segundos):**
-"[Lee el problema del README.md]"
-
----
-
-**Explicar tu Enfoque Mental (30 segundos):**
-"Mi patrón mental para esto es:
-
-1. [Paso 1 del patrón]
-2. [Paso 2 del patrón]
-3. [Paso 3 del patrón]
-
-Este patrón funciona porque..."
-
----
-
-**Escribir el Código Explicando (1-2 minutos):**
-"Voy a escribir la función paso a paso:
-
-[Explica cada línea mientras la escribes]"
-
----
-
-**Por Qué Importa (30 segundos):**
-"Este patrón lo uso en el trabajo cuando..."
-
----
-
-## 💡 Tips para el Video
-
-1. Habla claro y pausado
-2. Muestra tu pantalla completa
-3. Ejecuta los tests
-4. Sé auténtico
-5. Si te equivocas, corrígete
-
+## 💡 Why It's Important (240-270 seconds)
+"You use this in dashboards, reports, UI groupings, data analysis. It's a pattern that appears constantly in real work."

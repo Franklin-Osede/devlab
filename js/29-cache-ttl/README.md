@@ -1,12 +1,11 @@
-# 29 - Cache con TTL
+# 29 - Cache with TTL
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un cache en memoria con TTL (Time To Live) y limpieza automática.
+Implement an in-memory cache with TTL (Time To Live) and automatic cleanup.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

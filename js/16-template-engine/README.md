@@ -1,12 +1,11 @@
-# 16 - Template Engine Simple
+# 16 - Simple Template Engine
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un template engine simple que reemplace `{{key}}` con valores de un objeto.
+Implement a simple template engine that replaces `{{key}}` with values from an object.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

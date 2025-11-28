@@ -1,12 +1,11 @@
-# 23 - Promise.race Personalizado
+# 23 - Custom Promise.race
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa tu propia versión de Promise.race.
+Implement your own version of Promise.race.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

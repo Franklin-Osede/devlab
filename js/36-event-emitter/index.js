@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Simple Node.js-style EventEmitter
+// ============================================================================
 /**
- * EventEmitter simple estilo Node.js
+ * Simple Node.js-style EventEmitter
  */
 function createEventEmitter() {
   const events = new Map();
@@ -36,4 +39,3 @@ function createEventEmitter() {
 }
 
 module.exports = { createEventEmitter };
-

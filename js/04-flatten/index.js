@@ -1,25 +1,27 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, recursive, handles depth
+// ============================================================================
 /**
- * Aplana un array anidado hasta la profundidad especificada
+ * Flattens a nested array to the specified depth
  * 
- * @param {Array} array - Array a aplanar
- * @param {number} depth - Profundidad máxima (default: Infinity)
- * @returns {Array} Array aplanado
+ * @param {Array} array - Array to flatten
+ * @param {number} depth - Maximum depth (default: Infinity)
+ * @returns {Array} Flattened array
  */
 function flatten(array, depth = Infinity) {
-  // 1. VALIDAR INPUT Y CASO BASE
+  // 1. VALIDATE INPUT AND BASE CASE
   if (!Array.isArray(array) || depth === 0) return array;
 
-  // 2. REDUCIR RECURSIVAMENTE
+  // 2. REDUCE RECURSIVELY
   return array.reduce((result, item) => {
-    // Si es array y aún hay profundidad, aplanar recursivamente
+    // If it's an array and there's still depth, flatten recursively
     if (Array.isArray(item) && depth > 0) {
       return result.concat(flatten(item, depth - 1));
     }
-    // Si no es array, añadirlo directamente
+    // If it's not an array, add it directly
     result.push(item);
     return result;
   }, []);
 }
 
 module.exports = { flatten };
-

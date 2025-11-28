@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Simple Jest-style mini test runner
+// ============================================================================
 /**
- * Mini test runner simple
+ * Simple mini test runner
  */
 function createTestRunner() {
   const tests = [];
@@ -30,4 +33,3 @@ function createTestRunner() {
 }
 
 module.exports = { createTestRunner };
-

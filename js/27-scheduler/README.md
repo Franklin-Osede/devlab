@@ -1,12 +1,11 @@
-# 27 - Scheduler Básico
+# 27 - Basic Scheduler
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un scheduler para ejecutar funciones en el futuro con posibilidad de cancelar.
+Implement a scheduler to execute functions in the future with cancellation capability.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

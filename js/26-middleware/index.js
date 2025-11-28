@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Express-style middleware runner
+// ============================================================================
 /**
- * Middleware runner estilo Express
+ * Express-style middleware runner
  */
 async function runMiddlewares(req, res, middlewares) {
   let index = 0;
@@ -15,4 +18,3 @@ async function runMiddlewares(req, res, middlewares) {
 }
 
 module.exports = { runMiddlewares };
-

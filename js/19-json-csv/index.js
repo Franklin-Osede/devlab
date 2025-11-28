@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure functions, handles CSV escaping
+// ============================================================================
 /**
- * Conversión JSON ↔ CSV simple
+ * Simple JSON ↔ CSV conversion
  */
 function jsonToCsv(data) {
   if (!Array.isArray(data) || data.length === 0) return '';
@@ -10,7 +13,7 @@ function jsonToCsv(data) {
   const rows = data.map(obj => 
     headers.map(key => {
       const value = obj[key];
-      // Escapar comillas y envolver en comillas si contiene coma
+      // Escape quotes and wrap in quotes if contains comma
       const str = String(value ?? '');
       return str.includes(',') ? `"${str.replace(/"/g, '""')}"` : str;
     }).join(',')
@@ -64,4 +67,3 @@ function parseCsvLine(line) {
 }
 
 module.exports = { jsonToCsv, csvToJson };
-

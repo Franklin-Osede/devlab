@@ -1,23 +1,25 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, immutable, readable, efficient
+// ============================================================================
 /**
- * Normaliza un array de objetos con id a un objeto indexado por id
+ * Normalizes an array of objects with id to an object indexed by id
  * 
- * @param {Array} items - Array de objetos con propiedad id
- * @returns {Object} Objeto con claves id y valores objetos completos
+ * @param {Array} items - Array of objects with id property
+ * @returns {Object} Object with id keys and complete objects as values
  */
 function normalizeById(items) {
-  // 1. VALIDAR INPUT
+  // 1. VALIDATE INPUT
   if (!Array.isArray(items)) return {};
 
-  // 2. REDUCIR A OBJETO INDEXADO POR ID
+  // 2. REDUCE TO OBJECT INDEXED BY ID
   return items.reduce((byId, item) => {
-    // Si el item no tiene id, saltarlo
+    // If item doesn't have id, skip it
     if (item?.id == null) return byId;
     
-    // Usar id como clave, objeto completo como valor
+    // Use id as key, complete object as value
     byId[item.id] = item;
     return byId;
   }, {});
 }
 
 module.exports = { normalizeById };
-

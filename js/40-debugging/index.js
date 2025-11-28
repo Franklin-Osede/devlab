@@ -1,23 +1,25 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Function with intentional bugs for debugging practice
+// ============================================================================
 /**
- * Función con bugs intencionados para practicar debugging
+ * Function with intentional bugs for debugging practice
  */
 function calculateTotal(items, discount = 0) {
-  // Bug 1: No valida que items sea array
+  // Bug 1: Doesn't validate that items is an array
   let total = 0;
   
-  // Bug 2: Usa <= en vez de < para el length
+  // Bug 2: Uses <= instead of < for length
   for (let i = 0; i <= items.length; i++) {
-    // Bug 3: No valida que item tenga price
+    // Bug 3: Doesn't validate that item has price
     total += items[i].price;
   }
   
-  // Bug 4: No valida que discount sea número
-  // Bug 5: No valida rango de discount (0-1)
+  // Bug 4: Doesn't validate that discount is a number
+  // Bug 5: Doesn't validate discount range (0-1)
   total = total * (1 - discount);
   
-  // Bug 6: Retorna sin redondear
+  // Bug 6: Returns without rounding
   return total;
 }
 
 module.exports = { calculateTotal };
-

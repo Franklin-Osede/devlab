@@ -1,12 +1,11 @@
-# 38 - Transformador de Errores
+# 38 - Error Transformer
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Transforma diferentes tipos de errores a un formato estándar.
+Transform different types of errors to a standard format.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

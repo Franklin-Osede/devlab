@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Multi-step form validator
+// ============================================================================
 /**
- * Validador de formularios multipaso
+ * Multi-step form validator
  */
 function createFormValidator(steps) {
   return {
@@ -12,11 +15,11 @@ function createFormValidator(steps) {
         const value = data[field];
         
         if (rules.required && (value === undefined || value === '')) {
-          errors.push(`${field} es requerido`);
+          errors.push(`${field} is required`);
         }
         
         if (rules.minLength && value && value.length < rules.minLength) {
-          errors.push(`${field} debe tener al menos ${rules.minLength} caracteres`);
+          errors.push(`${field} must have at least ${rules.minLength} characters`);
         }
       }
       
@@ -37,4 +40,3 @@ function createFormValidator(steps) {
 }
 
 module.exports = { createFormValidator };
-

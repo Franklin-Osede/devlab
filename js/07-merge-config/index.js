@@ -1,18 +1,21 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, immutable, uses spread operator
+// ============================================================================
 /**
- * Combina dos objetos de configuración sin mutar los originales
+ * Combines two configuration objects without mutating the originals
  * 
- * @param {Object} defaultConfig - Configuración por defecto
- * @param {Object} userConfig - Configuración del usuario (sobrescribe defaults)
- * @returns {Object} Nuevo objeto combinado
+ * @param {Object} defaultConfig - Default configuration
+ * @param {Object} userConfig - User configuration (overrides defaults)
+ * @returns {Object} New combined object
  */
 function mergeConfig(defaultConfig, userConfig) {
-  // Si no hay userConfig, retornar copia de defaultConfig
+  // If no userConfig, return copy of defaultConfig
   if (!userConfig) return { ...defaultConfig };
   
-  // Si no hay defaultConfig, retornar copia de userConfig
+  // If no defaultConfig, return copy of userConfig
   if (!defaultConfig) return { ...userConfig };
   
-  // Combinar: defaults primero, luego user (sobrescribe)
+  // Combine: defaults first, then user (overrides)
   return {
     ...defaultConfig,
     ...userConfig,
@@ -20,4 +23,3 @@ function mergeConfig(defaultConfig, userConfig) {
 }
 
 module.exports = { mergeConfig };
-

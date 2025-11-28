@@ -1,11 +1,14 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Adapter between two APIs with different formats
+// ============================================================================
 /**
- * Adapter entre dos APIs con formatos diferentes
+ * Adapter between two APIs with different formats
  */
 function createApiAdapter(externalApi) {
   return {
     async getUsers() {
       const response = await externalApi.fetchUsers();
-      // Adaptar formato externo a formato interno
+      // Adapt external format to internal format
       return response.data.map(user => ({
         id: user.user_id,
         name: `${user.first_name} ${user.last_name}`,
@@ -17,4 +20,3 @@ function createApiAdapter(externalApi) {
 }
 
 module.exports = { createApiAdapter };
-

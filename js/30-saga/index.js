@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Saga/Transactional workflow with rollback
+// ============================================================================
 /**
- * Saga/Transactional workflow simple
+ * Simple Saga/Transactional workflow
  */
 async function executeSaga(steps) {
   const executed = [];
@@ -11,7 +14,7 @@ async function executeSaga(steps) {
     }
     return { success: true, results: executed.map(e => e.result) };
   } catch (error) {
-    // Rollback en orden inverso
+    // Rollback in reverse order
     for (let i = executed.length - 1; i >= 0; i--) {
       if (executed[i].step.compensate) {
         await executed[i].step.compensate(executed[i].result);
@@ -22,4 +25,3 @@ async function executeSaga(steps) {
 }
 
 module.exports = { executeSaga };
-

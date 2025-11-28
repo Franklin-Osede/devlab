@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, role-based permissions
+// ============================================================================
 /**
- * Sistema simple de permisos basado en roles
+ * Simple role-based permission system
  */
 function can(user, action, resource) {
   if (!user || !user.role) return false;
@@ -15,4 +18,3 @@ function can(user, action, resource) {
 }
 
 module.exports = { can };
-

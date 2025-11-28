@@ -1,12 +1,11 @@
-# 35 - i18n Básico
+# 35 - Basic i18n
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un sistema básico de internacionalización.
+Implement a basic internationalization system.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, scoring algorithm with sorting
+// ============================================================================
 /**
- * Búsqueda de texto con scoring simple
+ * Text search with simple scoring
  */
 function searchText(term, texts) {
   if (!term || !Array.isArray(texts)) return [];
@@ -16,13 +19,13 @@ function searchText(term, texts) {
 
 function calculateScore(term, text) {
   if (text.includes(term)) {
-    // Coincidencia exacta al inicio = mayor score
+    // Exact match at start = highest score
     if (text.startsWith(term)) return 100;
-    // Coincidencia exacta = score alto
+    // Exact match = high score
     return 50;
   }
   
-  // Coincidencias parciales
+  // Partial matches
   const words = term.split(' ');
   let score = 0;
   words.forEach(word => {
@@ -33,4 +36,3 @@ function calculateScore(term, text) {
 }
 
 module.exports = { searchText };
-

@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Configurable logger with levels
+// ============================================================================
 /**
- * Logger configurable con niveles
+ * Configurable logger with levels
  */
 function createLogger(level = 'info', output = console.log) {
   const levels = { debug: 0, info: 1, warn: 2, error: 3 };
@@ -22,4 +25,3 @@ function createLogger(level = 'info', output = console.log) {
 }
 
 module.exports = { createLogger };
-

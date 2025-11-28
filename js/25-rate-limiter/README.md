@@ -1,12 +1,11 @@
 # 25 - Rate Limiter
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un rate limiter que limite X peticiones por usuario en una ventana de tiempo.
+Implement a rate limiter that limits X requests per user in a time window.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

@@ -1,55 +1,55 @@
-# Solución: Normalizar Datos
+# Solution: Normalize Data
 
-## 🧠 Patrón Mental (MEMORIZAR ESTO)
+## 🧠 Mental Pattern (MEMORIZE THIS)
 
-Este patrón es **súper común** cuando trabajas con estados de frontend (React, Redux) o necesitas crear índices de datos para búsquedas rápidas.
+This pattern is **super common** when working with frontend states (React, Redux) or when you need to create data indexes for fast lookups.
 
-### Estructura Universal
+### Universal Structure
 
 ```javascript
 function normalizeById(items) {
-  // 1. VALIDAR INPUT
+  // 1. VALIDATE INPUT
   if (!Array.isArray(items)) return {};
   
-  // 2. REDUCIR A OBJETO INDEXADO POR ID
+  // 2. REDUCE TO OBJECT INDEXED BY ID
   return items.reduce((byId, item) => {
-    if (item?.id == null) return byId; // Saltar si no tiene id
+    if (item?.id == null) return byId; // Skip if no id
     byId[item.id] = item;
     return byId;
   }, {});
 }
 ```
 
-## 📝 Explicación Paso a Paso
+## 📝 Step-by-Step Explanation
 
-### Paso 1: Validación
+### Step 1: Validation
 ```javascript
 if (!Array.isArray(items)) return {};
 ```
 
-### Paso 2: Reduce para Transformar Array → Objeto
-**¿Por qué reduce?** Porque transformas un array en un objeto. Es el método perfecto.
+### Step 2: Reduce to Transform Array → Object
+**Why reduce?** Because you transform an array into an object. It's the perfect method.
 
 ```javascript
 return items.reduce((byId, item) => {
-  // byId es el acumulador (objeto)
-  // item es cada elemento del array
+  // byId is the accumulator (object)
+  // item is each element of the array
 }, {});
 ```
 
-### Paso 3: Validar que tenga ID
+### Step 3: Validate that it has ID
 ```javascript
 if (item?.id == null) return byId;
-// Si no tiene id, saltar este elemento
+// If it doesn't have id, skip this element
 ```
 
-### Paso 4: Asignar al Objeto
+### Step 4: Assign to Object
 ```javascript
 byId[item.id] = item;
-// Usa el id como clave, el objeto completo como valor
+// Use id as key, complete object as value
 ```
 
-## ✅ Código Final (Memorizar la estructura)
+## ✅ Final Code (Memorize the structure)
 
 ```javascript
 function normalizeById(items) {
@@ -63,37 +63,19 @@ function normalizeById(items) {
 }
 ```
 
-## 🎥 Script para Video de LinkedIn
+## 🔑 Key Points to Memorize
 
-### Intro (10 seg)
-"Normalizar datos es un patrón que usas constantemente en frontend. Te muestro cómo hacerlo bien."
+1. **Use `reduce` to transform array → object**
+2. **Validate that item has `id` before assigning**
+3. **Id can be number or string**
+4. **If there are duplicate ids, last one overwrites**
+5. **Return empty object if invalid input**
 
-### El Problema (20 seg)
-"Tienes un array de objetos con id y necesitas convertirlo en un objeto indexado por id para búsquedas rápidas."
+## 🎯 Common Variations
 
-### Tu Enfoque Mental (30 seg)
-"Mi patrón: validar → usar reduce para transformar array en objeto → usar id como clave → asignar objeto completo como valor."
+- Normalize with custom key function
+- Normalize and transform (only certain properties)
+- Normalize nested arrays
+- Denormalize (object → array)
 
-### El Código (1 min)
-"Primero valido el input. Uso reduce porque transformo array en objeto. Si el item no tiene id, lo salto. Luego asigno byId[item.id] = item."
-
-### Por Qué Importa (20 seg)
-"Lo usas en Redux para normalizar estados, en React para crear índices, en cualquier lugar donde necesites búsqueda O(1) por id. Es fundamental en frontend moderno."
-
-## 🔑 Puntos Clave para Memorizar
-
-1. **Usa `reduce` para transformar array → objeto**
-2. **Valida que el item tenga `id` antes de asignar**
-3. **El id puede ser number o string**
-4. **Si hay ids duplicados, el último sobrescribe**
-5. **Retorna objeto vacío si input inválido**
-
-## 🎯 Variaciones Comunes
-
-- Normalizar con función de clave personalizada
-- Normalizar y transformar (solo ciertas propiedades)
-- Normalizar arrays anidados
-- Desnormalizar (objeto → array)
-
-**Todas siguen el mismo patrón mental con reduce.**
-
+**All follow the same mental pattern with reduce.**

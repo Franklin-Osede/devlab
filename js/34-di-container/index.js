@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Simple DI Container
+// ============================================================================
 /**
- * DI Container simple
+ * Simple DI Container
  */
 function createContainer() {
   const services = new Map();
@@ -33,4 +36,3 @@ function createContainer() {
 }
 
 module.exports = { createContainer };
-

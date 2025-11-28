@@ -1,18 +1,17 @@
 # 11 - Currying
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa currying: convierte una función que toma múltiples argumentos en una cadena de funciones que toman un argumento cada una.
+Implement currying: convert a function that takes multiple arguments into a chain of functions that each take one argument.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Si se proporcionan suficientes argumentos, ejecutar la función
-- Si no, retornar función que acepta el siguiente argumento
-- Mantener contexto (`this`)
+- If enough arguments provided, execute the function
+- If not, return function that accepts next argument
+- Maintain context (`this`)
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Async function, retry logic with exponential backoff
+// ============================================================================
 /**
- * Wrapper de fetch con retries y timeout
+ * Fetch wrapper with retries and timeout
  */
 async function fetchWithRetry(url, options = {}) {
   const { retries = 3, timeout = 5000, ...fetchOptions } = options;
@@ -29,4 +32,3 @@ async function fetchWithRetry(url, options = {}) {
 }
 
 module.exports = { fetchWithRetry };
-

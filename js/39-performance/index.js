@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Function performance measurement
+// ============================================================================
 /**
- * Medición de performance de funciones
+ * Function performance measurement
  */
 function measurePerformance(fn, label = 'Function') {
   return function(...args) {
@@ -26,4 +29,3 @@ async function measureAsyncPerformance(fn, label = 'Async Function') {
 }
 
 module.exports = { measurePerformance, measureAsyncPerformance };
-

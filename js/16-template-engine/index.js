@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, uses regex for template replacement
+// ============================================================================
 /**
- * Template engine simple: reemplaza {{key}} con valores del objeto
+ * Simple template engine: replaces {{key}} with values from object
  */
 function render(template, data) {
   return template.replace(/\{\{(\w+)\}\}/g, (match, key) => {
@@ -8,4 +11,3 @@ function render(template, data) {
 }
 
 module.exports = { render };
-

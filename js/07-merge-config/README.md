@@ -1,27 +1,26 @@
 # 07 - Merge Configs
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Combina dos objetos de configuración, donde el segundo sobrescribe al primero, sin mutar los objetos originales.
+Combine two configuration objects, where the second overrides the first, without mutating the original objects.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- No mutar los objetos originales (inmutabilidad)
-- El segundo objeto sobrescribe propiedades del primero
-- Retornar nuevo objeto combinado
-- Manejar objetos anidados (shallow merge)
-- Manejar casos edge (null, undefined)
+- Don't mutate original objects (immutability)
+- Second object overrides properties of the first
+- Return new combined object
+- Handle nested objects (shallow merge)
+- Handle edge cases (null, undefined)
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar inputs**
-2. **Spread operator** para crear copia del primero
-3. **Spread del segundo** para sobrescribir
-4. **Retornar** nuevo objeto
+1. **Validate inputs**
+2. **Spread operator** to create copy of first
+3. **Spread second** to override
+4. **Return** new object
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 10-15 minutos
-- Con práctica: 3-5 minutos
-- En entrevista: 2-3 minutos
-
+- First time: 10-15 minutes
+- With practice: 3-5 minutes
+- In interview: 2-3 minutes

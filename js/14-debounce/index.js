@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, uses setTimeout for delay
+// ============================================================================
 /**
- * Debounce: retrasa ejecución hasta que pase tiempo sin llamadas
+ * Debounce: delays execution until time passes without calls
  */
 function debounce(fn, delay) {
   let timeoutId;
@@ -13,4 +16,3 @@ function debounce(fn, delay) {
 }
 
 module.exports = { debounce };
-

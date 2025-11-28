@@ -1,26 +1,25 @@
-# 10 - Filtro Multidimensional
+# 10 - Multidimensional Filter
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Filtra una lista de elementos por múltiples criterios y ordénalos por diferentes propiedades.
+Filter a list of elements by multiple criteria and sort them by different properties.
 
-## 🎯 Requisitos
+## 🎯 Requirements
 
-- Filtrar por múltiples condiciones (precio, categoría, disponibilidad, etc.)
-- Ordenar por diferentes criterios (precio asc/desc, nombre, fecha, etc.)
-- Manejar filtros opcionales (si no se proporciona, no filtrar)
-- Retornar array vacío si input inválido
+- Filter by multiple conditions (price, category, availability, etc.)
+- Sort by different criteria (price asc/desc, name, date, etc.)
+- Handle optional filters (if not provided, don't filter)
+- Return empty array if invalid input
 
-## 🧠 Patrón Mental a Memorizar
+## 🧠 Mental Pattern to Memorize
 
-1. **Validar input**
-2. **Aplicar filtros** en cadena (cada filtro es independiente)
-3. **Aplicar ordenamiento** según criterio
-4. **Retornar** resultado filtrado y ordenado
+1. **Validate input**
+2. **Apply filters** in chain (each filter is independent)
+3. **Apply sorting** according to criteria
+4. **Return** filtered and sorted result
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 15-20 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

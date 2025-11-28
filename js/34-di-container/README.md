@@ -1,12 +1,11 @@
-# 34 - DI Container Simple
+# 34 - Simple DI Container
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un contenedor de inyección de dependencias simple.
+Implement a simple dependency injection container.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 25-30 minutos
-- Con práctica: 10-15 minutos
-- En entrevista: 7-10 minutos
-
+- First time: 25-30 minutes
+- With practice: 10-15 minutes
+- In interview: 7-10 minutes

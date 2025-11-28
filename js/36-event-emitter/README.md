@@ -1,12 +1,11 @@
 # 36 - EventEmitter/Pub-Sub
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa un EventEmitter simple con métodos on, emit, off, once.
+Implement a simple EventEmitter with on, emit, off, once methods.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 20-25 minutos
-- Con práctica: 7-10 minutos
-- En entrevista: 5-7 minutos
-
+- First time: 20-25 minutes
+- With practice: 7-10 minutes
+- In interview: 5-7 minutes

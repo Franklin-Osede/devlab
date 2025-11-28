@@ -1,12 +1,11 @@
 # 14 - Debounce
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa debounce: retrasa la ejecución de una función hasta que pase un tiempo sin nuevas llamadas.
+Implement debounce: delays function execution until time passes without new calls.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

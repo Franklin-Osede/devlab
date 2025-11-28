@@ -1,12 +1,15 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Refactored giant function into small testable functions
+// ============================================================================
 /**
- * Ejemplo de función gigante para refactorizar
+ * Example of giant function to refactor
  */
 function processOrder(order) {
-  // Validación
+  // Validation
   if (!order) return { error: 'Order required' };
   if (!order.items || order.items.length === 0) return { error: 'Items required' };
   
-  // Calcular total
+  // Calculate total
   let total = 0;
   for (let i = 0; i < order.items.length; i++) {
     const item = order.items[i];
@@ -14,7 +17,7 @@ function processOrder(order) {
     total += item.price * item.quantity;
   }
   
-  // Aplicar descuento
+  // Apply discount
   if (order.discountCode) {
     if (order.discountCode === 'SAVE10') {
       total = total * 0.9;
@@ -23,11 +26,11 @@ function processOrder(order) {
     }
   }
   
-  // Calcular impuestos
+  // Calculate taxes
   const tax = total * 0.21;
   const finalTotal = total + tax;
   
-  // Validar stock
+  // Validate stock
   for (let i = 0; i < order.items.length; i++) {
     const item = order.items[i];
     if (item.stock < item.quantity) {
@@ -39,4 +42,3 @@ function processOrder(order) {
 }
 
 module.exports = { processOrder };
-

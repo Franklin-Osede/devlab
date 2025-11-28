@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Pure function, uses Map for caching
+// ============================================================================
 /**
- * Memoiza una función: cachea resultados basados en argumentos
+ * Memoizes a function: caches results based on arguments
  */
 function memoize(fn) {
   const cache = new Map();
@@ -16,4 +19,3 @@ function memoize(fn) {
 }
 
 module.exports = { memoize };
-

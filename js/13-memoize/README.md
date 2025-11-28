@@ -1,12 +1,11 @@
 # 13 - Memoize
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa memoización: cachea resultados de una función basándose en sus argumentos.
+Implement memoization: cache function results based on its arguments.
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

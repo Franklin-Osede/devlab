@@ -1,15 +1,14 @@
 # 12 - Pipe / Compose
 
-## 📋 Enunciado
+## 📋 Problem Statement
 
-Implementa `pipe` y `compose` para encadenar transformaciones de datos.
+Implement `pipe` and `compose` to chain data transformations.
 
-- `pipe`: ejecuta funciones de izquierda a derecha
-- `compose`: ejecuta funciones de derecha a izquierda
+- `pipe`: executes functions from left to right
+- `compose`: executes functions from right to left
 
-## ⏱️ Tiempo Esperado
+## ⏱️ Expected Time
 
-- Primera vez: 15-20 minutos
-- Con práctica: 5-7 minutos
-- En entrevista: 3-5 minutos
-
+- First time: 15-20 minutes
+- With practice: 5-7 minutes
+- In interview: 3-5 minutes

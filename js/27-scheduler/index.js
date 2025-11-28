@@ -1,5 +1,8 @@
+// ============================================================================
+// SOLUTION: ✅ RECOMMENDED - Basic scheduler for executing functions in the future
+// ============================================================================
 /**
- * Scheduler básico para ejecutar funciones en el futuro
+ * Basic scheduler for executing functions in the future
  */
 function createScheduler() {
   const timers = new Map();
@@ -38,4 +41,3 @@ function createScheduler() {
 }
 
 module.exports = { createScheduler };
-
