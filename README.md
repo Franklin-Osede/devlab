@@ -26,19 +26,21 @@ Repositorio de práctica para convertirte en experto en pair programming y codin
 
 ### Para JavaScript:
 1. **Lee el enunciado** en `js/XX-ejercicio/README.md`
-2. **Intenta resolverlo** tú solo (aunque falles)
-3. **Estudia la solución** en `solution.md` (memoriza el patrón, no el código)
-4. **Practica con múltiples samples** en la carpeta `samples/`
-5. **Graba un video** explicando el patrón mental
-6. **Repite** con diferentes samples hasta que sea automático
+2. **Escribe tu solución** en `practice.js` (sin mirar `index.js`)
+3. **Ejecuta los tests**: `npm test js/XX-ejercicio`
+4. **Compara con la solución** en `index.js` si fallan los tests
+5. **Estudia el patrón** en `solution.md` o `EXPLICAR-PATRON.md`
+6. **Repite** borrando `practice.js` y escribiendo de nuevo
+7. **Graba un video** usando `EXPLICAR-PATRON.md` como guión
 
 ### Para TypeScript:
 1. **Haz primero la versión JavaScript** para entender el patrón
-2. **Luego haz la versión TypeScript** en `ts/XX-ejercicio/`
-3. **Estudia cómo añadir tipos** (interfaces, genéricos, tipos condicionales)
-4. **Practica con los mismos samples** pero ahora con tipos
-5. **Graba un video** explicando cómo TypeScript mejora el código
-6. **Compara ambas versiones** para entender la diferencia
+2. **Escribe tu solución TypeScript** en `practice.ts` (sin mirar `index.ts`)
+3. **Ejecuta los tests**: `npm test ts/XX-ejercicio`
+4. **Compara con la solución** en `index.ts` si fallan los tests
+5. **Estudia cómo añadir tipos** (interfaces, genéricos, tipos condicionales)
+6. **Graba un video** usando `EXPLICAR-PATRON.md` como guión
+7. **Compara ambas versiones** (JS vs TS) para entender la diferencia
 
 ## 📁 Estructura
 
@@ -47,10 +49,12 @@ devlab/
 ├── js/                         # Ejercicios en JavaScript
 │   ├── 01-filter-transform/
 │   │   ├── README.md          # Enunciado del ejercicio
-│   │   ├── solution.md        # Explicación del patrón para memorizar
-│   │   ├── index.js          # Tu solución
-│   │   ├── index.test.js     # Tests con múltiples samples
-│   │   └── samples/          # Datos de prueba (añade más aquí)
+│   │   ├── practice.js        # Archivo en blanco para practicar
+│   │   ├── index.js           # Solución completa
+│   │   ├── index.test.js      # Tests con múltiples samples
+│   │   ├── solution.md        # Explicación del patrón (ejercicios 01-10)
+│   │   ├── EXPLICAR-PATRON.md # Script para grabar video
+│   │   └── samples/           # Datos de prueba (añade más aquí)
 │   │       ├── sample-1.json
 │   │       ├── sample-2.json
 │   │       └── ...
@@ -58,10 +62,11 @@ devlab/
 ├── ts/                         # Ejercicios en TypeScript
 │   ├── 01-filter-transform/
 │   │   ├── README.md          # Enunciado (con enfoque TypeScript)
-│   │   ├── solution.md        # Explicación con tipos y genéricos
-│   │   ├── index.ts          # Tu solución con tipos
-│   │   ├── index.test.ts     # Tests con tipos
-│   │   └── samples/          # Mismos samples que JS
+│   │   ├── practice.ts        # Archivo en blanco para practicar con tipos
+│   │   ├── index.ts           # Solución con tipos e interfaces
+│   │   ├── index.test.ts      # Tests con tipos
+│   │   ├── EXPLICAR-PATRON.md # Script para grabar video (TypeScript)
+│   │   └── samples/           # Mismos samples que JS
 │   │       └── ...
 ```
 

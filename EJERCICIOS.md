@@ -8,8 +8,11 @@
 - [x] 21-30 - Async y Backend
 - [x] 31-40 - Arquitectura y Calidad
 
-### TypeScript (10 ejercicios)
+### TypeScript (40 ejercicios)
 - [x] 01-10 - Versiones TypeScript con tipos e interfaces
+- [x] 11-20 - Funciones Avanzadas con genéricos
+- [x] 21-30 - Async y Backend con tipos
+- [x] 31-40 - Arquitectura y Calidad con interfaces
 
 ## 📋 Pendientes
 
