@@ -1,25 +1,22 @@
 // ============================================================================
 // SOLUTION 1: ✅ RECOMMENDED - Pure function, immutable, readable, efficient
 // ============================================================================
-/**
- * ADVANTAGES:
- * - Pure function (same input → same output)
- * - Immutability (doesn't modify original)
- * - Early validation
- * - Method chaining (readable)
- * - Correct order: filter → sort → transform
- * - Optional chaining for safety
- */
+
 function getActiveUsers(users) {
-  // 1. VALIDATE INPUT (early return)
+  // Ok, validate input first - if it's not an array, return empty array
   if (!Array.isArray(users)) return [];
 
-  // 2. FILTER → only active users (reduces array before sorting)
-  // 3. SORT → by creation date ascending
-  // 4. TRANSFORM → only id, name, email
   return users
-    .filter(user => user?.active) // ✅ Optional chaining prevents errors if user is null/undefined
+    // Filter active users first - this way we sort fewer items (more efficient)
+    // The ?. means "if user exists, check active, otherwise return undefined"
+    .filter(user => user?.active)
+    
+    // Sort by creation date - oldest first
+    // Subtracting dates gives us the difference in milliseconds
     .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+    
+    // Map to new objects with only what we need
+    // The () around {} is needed because we're returning an object from arrow function
     .map(user => ({
       id: user.id,
       name: user.name,
@@ -27,31 +24,35 @@ function getActiveUsers(users) {
     }));
 }
 
+// WHY THIS WORKS:
+// ✅ Pure function - same input always gives same output
+// ✅ Doesn't change the original array
+// ✅ Filter first, then sort - faster because we sort less items
+// ✅ Safe - handles null/undefined with ?.
+
 // ============================================================================
 // SOLUTION 2: ⭐ EXCELLENT - Advanced edge case handling
 // ============================================================================
-/**
- * ADDITIONAL ADVANTAGES:
- * - Handles users without createdAt (places them at the end)
- * - Handles users with invalid createdAt
- * - More robust for production
- */
+
 function getActiveUsers_EXCELLENT(users) {
   if (!Array.isArray(users)) return [];
 
   return users
     .filter(user => user?.active)
+    
+    // Handle cases where dates might be missing or broken
     .sort((a, b) => {
-      // Handle cases where createdAt can be null/undefined/invalid
+      // If createdAt is missing, use year 1970 as default
       const dateA = a?.createdAt ? new Date(a.createdAt) : new Date(0);
       const dateB = b?.createdAt ? new Date(b.createdAt) : new Date(0);
       
-      // If any date is invalid, returns NaN, so we validate
+      // Check if date is valid - if not, use 0
       const timeA = isNaN(dateA.getTime()) ? 0 : dateA.getTime();
       const timeB = isNaN(dateB.getTime()) ? 0 : dateB.getTime();
       
       return timeA - timeB;
     })
+    
     .map(user => ({
       id: user.id,
       name: user.name,
@@ -59,7 +60,11 @@ function getActiveUsers_EXCELLENT(users) {
     }));
 }
 
+// WHEN TO USE:
+// ✅ Solution 1: Use this most of the time (works for 95% of cases)
+// ⭐ Solution 2: Use when you get bad data from APIs (missing dates, broken dates)
+
 module.exports = { 
-  getActiveUsers, // ✅ Use this in production
-  getActiveUsers_EXCELLENT // ⭐ For more complex cases
+  getActiveUsers,
+  getActiveUsers_EXCELLENT
 };

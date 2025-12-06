@@ -1,6 +1,6 @@
 # 01 - Filter and Transform
 
-## 📋 Problem Statement
+##  Problem Statement
 
 Given a list of elements (users, products, orders, etc.), you must:
 
@@ -9,7 +9,7 @@ Given a list of elements (users, products, orders, etc.), you must:
 3. **Transform** to a simpler format (only the necessary properties)
 4. **Handle** edge cases (invalid input, empty arrays, etc.)
 
-## 🎯 Requirements
+## Requirements
 
 - If input is not an array, return `[]`
 - Filter elements that meet the condition
@@ -17,7 +17,7 @@ Given a list of elements (users, products, orders, etc.), you must:
 - Map to an object with only the required properties
 - Handle `null` or `undefined` values in elements
 
-## 💡 Examples
+##  Examples
 
 ### Example 1: Active users
 ```javascript
@@ -38,19 +38,6 @@ const products = [
   { id: 3, name: "Keyboard", price: 75, stock: 10, category: "electronics" }
 ];
 
-// Expected result: only with stock > 0, sorted by price, with id, name, price
-```
 
-## 🧠 Mental Pattern to Memorize
 
-1. **Validate input** → `if (!Array.isArray(input)) return []`
-2. **Filter** → `.filter(item => condition)`
-3. **Sort** → `.sort((a, b) => comparison)`
-4. **Transform** → `.map(item => ({ properties }))`
-5. **Return** → `return result`
 
-## ⏱️ Expected Time
-
-- First time: 15-20 minutes
-- With practice: 5-7 minutes
-- In interview: 3-5 minutes

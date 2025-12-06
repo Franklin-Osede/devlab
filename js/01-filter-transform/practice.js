@@ -2,9 +2,10 @@
  * PRACTICE: Write your solution here
  */
 
-function getActiveUsers(user) {
-  
-  
-}
+function getActiveUsers(usuarios) {
+    
+    }
+    
+    
 
 module.exports = { getActiveUsers };
