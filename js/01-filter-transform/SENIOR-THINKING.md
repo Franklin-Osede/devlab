@@ -1,6 +1,6 @@
 # Senior Dev Thinking Process
 
-Hello everyone! Today I'm going to walk through a problem where I'm asked to do certain things, and then I'll solve it step by step using JavaScript. Let me start by reading through the problem statement and thinking out loud about my approach.
+Hello everyone! Today I'm going to walk through a problem where I'm asked to do certain things, and then I'll solve it step by step using JavaScript. Let me start by reading through the problem statement
 
 ---
 
@@ -16,13 +16,13 @@ Given a list of elements (users, products, orders, etc.), you must:
 1. **Filter** only elements that meet a condition (e.g., active, available, etc.)
 ```
 
-*"Filter first. Use .filter(). Reduces dataset early."*
+*"Filter first. Use .filter() function so it reduces dataset early."*
 
 ```
 2. **Sort** by a specific property (date, price, name, etc.)
 ```
 
-*"Sort after filter. More efficient. Use .sort() with comparison."*
+Then on this case we can use sort functio  after filtercause  ore efficient so can use it with comparison."*
 
 ```
 3. **Transform** to a simpler format (only the necessary properties)
